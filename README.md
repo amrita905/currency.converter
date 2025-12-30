@@ -1,2 +1,2 @@
 # currency.converter
-useing FeignClient
+using FeignClient
