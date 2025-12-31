@@ -16,6 +16,9 @@ public class ExchangeService {
 
 
     public ExchangeResponse getRate(String from, String to) {
+
+        from = from.trim().toUpperCase();
+        to = to.trim().toUpperCase();
         ExternalRateResponse response = client.getRates(from);
 
         Double rate = response.getRates().get(to);
